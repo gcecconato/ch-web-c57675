@@ -1,0 +1,116 @@
+/* Se inicializa con fuente a utilizar como estilo y se opta por una sóla, para luego que el formateo final dependea de los tags h1...h6...p */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+    /* // <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 300 to 800 */
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+}
+
+/* Estilo general del cuerpo del HTML */
+body {
+    background-color: rgb(222, 243, 255);
+    margin: 0px;
+}
+
+/* Estilos del encabezado */
+header {
+    background-color: rgb(255, 255, 255);
+    position: sticky;
+    top: 0;
+    margin: 0;
+    padding: 10px;
+    z-index: 100;
+    overflow: hidden;
+    /* Para asegurarnos de que el contenedor incluya los elementos flotantes */
+}
+
+header a img {
+    width: 100px;
+    /* Ancho de la imagen del logo */
+    height: 100px;
+    /* Altura de la imagen del logo */
+    float: left;
+}
+
+header h1 {
+    color: rgb(65, 132, 172);
+    display: inline-block;
+    margin-left: 20px;
+    vertical-align: middle;
+    /* Alinea verticalmente al centro */
+    line-height: 50px;
+    /* Altura de línea para centrar verticalmente el texto */
+}
+
+header nav {
+    float: right;
+    margin-right: 20px;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+header nav ul li {
+    display: inline-block;
+    /* Hace que los elementos de la lista se muestren en línea */
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+header nav ul li a {
+    color: rgb(65, 132, 172);
+    text-decoration: none;
+}
+
+/* Estilos del la parte principal del HTML */
+
+main {
+    position: relative;
+}
+
+.imagenInicio {
+    max-width: 100%;
+    height: auto;
+}
+
+.oficina {
+    text-align: center;
+}
+
+/* Estilos del pié de página */
+
+footer {
+    background-color: rgb(140, 202, 239);
+    position: relative;
+    padding: 5px;
+}
+
+footer ul {
+    list-style-type: none;
+    /* Elimina los puntos de las listas */
+    padding: 0;
+}
+
+footer ul li {
+    display: inline;
+    /* Hace que los elementos de la lista se muestren en línea */
+    margin-right: 10px;
+    /* Añade un poco de espacio entre los elementos */
+}
+
+footer ul li img {
+    width: 20px;
+    /* Ancho de la imagen */
+    height: 20px;
+    /* Altura de la imagen */
+}
